@@ -56,36 +56,35 @@ Socket programming finds applications in various domains, including web developm
 ### Client:
 ```
 import socket
+from datetime import datetime
 s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
-while True:
-i=input("Enter a data: ")
-c.send(i.encode())
-ack=c.recv(1024).decode()
+print("Client Address: ",addr)
+now = datetime.now()
+c.send(now.strftime("Date: %d / %m / %Y and Time: %H : %M : %S").encode())
+ack = c.recv(1024).decode()
 if ack:
-print(ack)
-continue
-else:
+    print(ack)
 c.close()
-break
 ```
 ### Server:
 ```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
-while True:
- print(s.recv(1024).decode())
- s.send("Acknowledgement Recived".encode())
+print(s.getsockname())
+print(s.recv(1024).decode())
+s.send("Acknowledgement received from the server.".encode())
 ```
 ## Output:
 ### Client:
-<img width="936" alt="Screenshot 2024-04-08 at 9 26 42 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/69ee8d5a-c985-4820-8a96-8a81daa31263">
+<img width="936" alt="Screenshot 2024-04-09 at 12 43 12 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/5120307f-d016-4c97-92c5-2081432d387d">
 
 ### Server:
-<img width="936" alt="Screenshot 2024-04-08 at 9 26 48 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/ed7abef9-b0e6-4e4c-8344-6cdd7302e8a9">
+
+<img width="936" alt="Screenshot 2024-04-09 at 12 43 16 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/f6989715-d10e-4a23-9382-a8090be7635c">
 
 
 ## Result:
