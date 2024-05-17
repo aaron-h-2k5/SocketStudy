@@ -1,6 +1,6 @@
 # Ex.No:1a  		 	Study of Socket Programming
 ## Register Number: 212221040135
-## Name: H. AARON
+## Name: Ragupathi P
 ## Aim: 
 To perform a study on Socket Programming
 ## Introduction:
@@ -84,7 +84,9 @@ s.send("Acknowledgement received from the server.".encode())
 
 ### Server:
 
-<img width="936" alt="Screenshot 2024-04-09 at 12 43 16 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/f6989715-d10e-4a23-9382-a8090be7635c">
+![image](https://github.com/Ragupathi1/SocketStudy/assets/143526042/cf9aabfc-cf75-44e1-ada0-7dc6d98089a7)
+
+
 
 
 ## Result:
