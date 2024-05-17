@@ -1,4 +1,4 @@
-# Ex.No:1a  			Study of Socket Programming
+# Ex.No:1a  		 	Study of Socket Programming
 ## Register Number: 212223040001
 ## Name: H. AARON
 ## Aim: 
