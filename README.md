@@ -80,11 +80,12 @@ s.send("Acknowledgement received from the server.".encode())
 ```
 ## Output:
 ### Client:
-<img width="936" alt="Screenshot 2024-04-09 at 12 43 12 PM" src="https://github.com/aaron-h-2k5/SocketStudy/assets/144250957/5120307f-d016-4c97-92c5-2081432d387d">
+![Screenshot 2024-05-17 102942](https://github.com/Ragupathi1/SocketStudy/assets/143526042/f1528e18-c78a-4da2-9cb2-22d5a127520d)
+
 
 ### Server:
 
-![image](https://github.com/Ragupathi1/SocketStudy/assets/143526042/cf9aabfc-cf75-44e1-ada0-7dc6d98089a7)
+![Screenshot 2024-05-17 102437](https://github.com/Ragupathi1/SocketStudy/assets/143526042/a4dbde5f-a2cc-4414-81a7-15ece3dec3c3)
 
 
 
